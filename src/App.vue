@@ -4,6 +4,8 @@
             <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
                 <h1>Filters & Mixins</h1>
                 <p>{{ text | toUppercase | to-lowercase }}</p>
+                
+                <button @click="fruits.push('berries')">Add A new fruit</button>
                 <hr>
                 <input v-model="filterText">
                 <ul>
@@ -18,7 +20,7 @@
 
 <script>
 import List from './List.vue';
-import { fruitMixin } from './fruitMixin.js';
+import { fruitMixin  } from './fruitMixin.js';
 
     export default {
         data(){
